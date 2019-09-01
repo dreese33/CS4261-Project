@@ -15,6 +15,8 @@
 		8B3FC905231C780B00CF924E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3FC903231C780B00CF924E /* LaunchScreen.storyboard */; };
 		8B3FC910231C780B00CF924E /* ThrowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3FC90F231C780B00CF924E /* ThrowTests.swift */; };
 		8B3FC91B231C780B00CF924E /* ThrowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3FC91A231C780B00CF924E /* ThrowUITests.swift */; };
+		8BE1C64A231C86C7005441BB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1C649231C86C7005441BB /* Login.swift */; };
+		8BE1C64C231C86D2005441BB /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1C64B231C86D2005441BB /* Signup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8B3FC916231C780B00CF924E /* ThrowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThrowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3FC91A231C780B00CF924E /* ThrowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowUITests.swift; sourceTree = "<group>"; };
 		8B3FC91C231C780B00CF924E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE1C649231C86C7005441BB /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		8BE1C64B231C86D2005441BB /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				8B3FC8F7231C780A00CF924E /* AppDelegate.swift */,
 				8B3FC8F9231C780A00CF924E /* ViewController.swift */,
 				8B3FC8FB231C780A00CF924E /* Main.storyboard */,
+				8BE1C649231C86C7005441BB /* Login.swift */,
+				8BE1C64B231C86D2005441BB /* Signup.swift */,
 				8B3FC901231C780B00CF924E /* Assets.xcassets */,
 				8B3FC903231C780B00CF924E /* LaunchScreen.storyboard */,
 				8B3FC906231C780B00CF924E /* Info.plist */,
@@ -260,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3FC8FA231C780A00CF924E /* ViewController.swift in Sources */,
+				8BE1C64C231C86D2005441BB /* Signup.swift in Sources */,
 				8B3FC900231C780A00CF924E /* Throw.xcdatamodeld in Sources */,
 				8B3FC8F8231C780A00CF924E /* AppDelegate.swift in Sources */,
+				8BE1C64A231C86C7005441BB /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
