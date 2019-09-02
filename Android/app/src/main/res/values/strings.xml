@@ -3,6 +3,7 @@
     <string name="title">Throw</string>
     <string name="login">Login</string>
     <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
     <string name="choose">Choose One</string>
     <string name="user">User</string>
     <string name="driver">Driver</string>
@@ -12,4 +13,21 @@
         at our local stores. Note: you will only make money if the items sell.
         Are you up for the challenge?</string>
     <string name="back">Back</string>
+    <string name="username_email">Username/Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="first">First Name</string>
+    <string name="last">Last Name</string>
+    <string name="email">Email</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="username">Username</string>
+
+    <string name="address">Street Address</string>
+    <string name="address2">Address Line 2</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
 </resources>
