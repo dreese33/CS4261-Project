@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Throw</string>
+    <string name="title">Throw</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="choose">Choose One</string>
+    <string name="user">User</string>
+    <string name="driver">Driver</string>
+    <string name="user_desc">There are two types of accounts: users and drivers. As a driver, you
+        will be notified of items that may be worth picking up in the area.
+        It will be your decision to pick the items up if you deem them as valuable and to be sold
+        at our local stores. Note: you will only make money if the items sell.
+        Are you up for the challenge?</string>
+    <string name="back">Back</string>
 </resources>
