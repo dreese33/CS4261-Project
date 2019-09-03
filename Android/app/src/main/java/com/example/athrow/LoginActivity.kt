@@ -26,6 +26,8 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun login() {
+        //Validate login credentials here
+
         val intent: Intent = Intent(applicationContext, HomeActivity::class.java)
         startActivity(intent)
     }

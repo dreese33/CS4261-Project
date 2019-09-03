@@ -84,6 +84,8 @@ class SignupActivity : AppCompatActivity() {
     }
 
     fun signup() {
+        //Add values to the database here
+
         val intent: Intent = Intent(applicationContext, HomeActivity::class.java)
         startActivity(intent)
     }

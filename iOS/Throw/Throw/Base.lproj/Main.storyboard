@@ -230,7 +230,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="Sign Up"/>
                                                 <connections>
-                                                    <segue destination="FZW-LC-pH8" kind="show" animates="NO" id="3P5-Zs-hFX"/>
+                                                    <action selector="signupAction:" destination="fgK-k6-nQV" eventType="touchUpInside" id="0fB-ss-sgX"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IzC-Yb-trq">
@@ -313,6 +313,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8SG-2v-q2e"/>
                     </view>
+                    <connections>
+                        <outlet property="address" destination="6Vr-L7-gO2" id="uVw-7k-H6m"/>
+                        <outlet property="city" destination="V6M-Mu-zEU" id="M9F-P7-uUB"/>
+                        <outlet property="confirmEmail" destination="SGw-bG-xRc" id="rM5-9w-EjC"/>
+                        <outlet property="confirmPassword" destination="q2O-6x-oWg" id="iNx-9c-CsS"/>
+                        <outlet property="country" destination="hVH-qn-E4W" id="93I-S9-r1x"/>
+                        <outlet property="email" destination="buh-sD-kiG" id="nSh-fg-lRM"/>
+                        <outlet property="firstName" destination="IzC-Yb-trq" id="mrf-rn-pPh"/>
+                        <outlet property="lastName" destination="xS0-Ch-ozz" id="ltb-ua-ZQ2"/>
+                        <outlet property="password" destination="0sX-2j-JBH" id="Qx5-rf-kHD"/>
+                        <outlet property="state" destination="TNB-RV-ILe" id="cT9-K5-WRM"/>
+                        <outlet property="streetAddress" destination="Hbj-jT-Zgt" id="AOY-py-Afh"/>
+                        <outlet property="username" destination="R0o-H2-ajf" id="dKZ-Wl-vai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQy-EO-yR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -355,7 +369,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="FZW-LC-pH8" kind="show" animates="NO" id="qD9-6t-Zth"/>
+                                    <action selector="loginAction:" destination="y7H-WC-zc2" eventType="touchUpInside" id="xqg-3u-pDg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fn1-A8-zwu">
@@ -396,7 +410,7 @@
         <!--View Controller-->
         <scene sceneID="i9g-KH-aYP">
             <objects>
-                <viewController id="FZW-LC-pH8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="FZW-LC-pH8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tOb-Ek-E20">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -436,9 +450,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="M69-me-Wfi"/>
-        <segue reference="3P5-Zs-hFX"/>
         <segue reference="Nyt-18-jBw"/>
-        <segue reference="Qjd-4u-Rv1"/>
+        <segue reference="VDC-Cm-W9X"/>
     </inferredMetricsTieBreakers>
 </document>

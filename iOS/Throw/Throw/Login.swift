@@ -11,4 +11,10 @@ import UIKit
 
 class Login: UIViewController {
     
+    @IBAction func loginAction(_ sender: UIButton) {
+        //Validate credentials here
+        
+        let newController = storyboard?.instantiateViewController(withIdentifier: "home")
+        self.present(newController!, animated: true, completion: nil)
+    }
 }
