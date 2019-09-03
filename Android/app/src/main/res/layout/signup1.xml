@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fitsSystemWindows="false">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/back_signup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:text="@string/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/title_login2"
-        android:layout_width="398dp"
+        android:id="@+id/title_login4"
+        android:layout_width="match_parent"
         android:layout_height="88dp"
         android:layout_marginTop="48dp"
         android:gravity="center"
@@ -20,20 +28,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/back_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:text="@string/back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="137dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -43,7 +41,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/first_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/first"
@@ -53,7 +51,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/last_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/last"
@@ -63,7 +61,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/email"
@@ -73,7 +71,7 @@
                 android:inputType="textEmailAddress" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/confirm_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/email"
@@ -83,7 +81,7 @@
                 android:inputType="textEmailAddress" />
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/username"
@@ -93,7 +91,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText23"
+                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/address"
@@ -103,7 +101,7 @@
                 android:inputType="textPostalAddress" />
 
             <EditText
-                android:id="@+id/editText24"
+                android:id="@+id/address2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/address"
@@ -113,7 +111,7 @@
                 android:inputType="textPostalAddress" />
 
             <EditText
-                android:id="@+id/editText25"
+                android:id="@+id/country"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/country"
@@ -123,7 +121,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText26"
+                android:id="@+id/city"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/city"
@@ -133,7 +131,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText27"
+                android:id="@+id/state"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/state"
@@ -143,7 +141,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText30"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/password"
@@ -153,7 +151,7 @@
                 android:inputType="textPassword" />
 
             <EditText
-                android:id="@+id/editText31"
+                android:id="@+id/confirm_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/password"
@@ -163,11 +161,11 @@
                 android:inputType="textPassword" />
 
             <Button
-                android:id="@+id/signup_page_button"
+                android:id="@+id/signup_page_button1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/signup" />
         </LinearLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
