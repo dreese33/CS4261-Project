@@ -1,0 +1,54 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "throw-throw-20190903194152-authRole",
+			"UnauthRoleArn": "arn:aws:iam::628350947791:role/throw-throw-20190903194152-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::628350947791:role/throw-throw-20190903194152-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "throw-throw-20190903194152-deployment",
+			"UnauthRoleName": "throw-throw-20190903194152-unauthRole",
+			"StackName": "throw-throw-20190903194152",
+			"StackId": "arn:aws:cloudformation:us-east-1:628350947791:stack/throw-throw-20190903194152/67e09280-cea4-11e9-a709-12f08cf73b28"
+		}
+	},
+	"auth": {
+		"throwa5a45a2a": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/throw-throw-20190903194152-deployment/amplify-cfn-templates/auth/throwa5a45a2a-cloudformation-template.yml",
+				"logicalId": "auththrowa5a45a2a"
+			},
+			"lastPushTimeStamp": "2019-09-04T00:06:38.518Z",
+			"output": {
+				"AppClientSecret": "iph316e2r9eln324icq68qcb8oq1ejfrq81bgoor0pjf48o54s9",
+				"UserPoolId": "us-east-1_1YVNJD8hT",
+				"AppClientIDWeb": "l02lkfearguk6qdtvkh8v1jlu",
+				"AppClientID": "5tkc34361ebmj964ddr6pv5ha8",
+				"IdentityPoolId": "us-east-1:2dda892c-8062-44f4-8a5b-fc0bb5e87e1c",
+				"IdentityPoolName": "throwa5a45a2a_identitypool_a5a45a2a__throw",
+				"UserPoolName": "throwa5a45a2a_userpool_a5a45a2a"
+			},
+			"lastPushDirHash": "+BSQbqApqaiCLNv7kcO5os8WOss="
+		}
+	},
+	"api": {
+		"throw": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY",
+				"GraphQLAPIIdOutput": "a2wwevcicfffjjqvpgttwjyxgu",
+				"GraphQLAPIEndpointOutput": "https://rmuxu74swze6pojoyfqeowp6v4.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-qvvejxhahvfnnklpam5gb7u2t4"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/throw-throw-20190903194152-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apithrow"
+			},
+			"lastPushTimeStamp": "2019-09-04T00:06:38.518Z",
+			"lastPushDirHash": "ZhBuF7EVyut10wONajn/6D9Cm18="
+		}
+	}
+}
