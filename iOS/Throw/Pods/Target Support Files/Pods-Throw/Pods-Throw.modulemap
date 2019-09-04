@@ -1,0 +1,6 @@
+framework module Pods_Throw {
+  umbrella header "Pods-Throw-umbrella.h"
+
+  export *
+  module * { export * }
+}

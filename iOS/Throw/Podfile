@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Throw' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Throw
+  pod 'AWSCore', '~> 2.10.0'
+  pod 'AWSAppSync', '~>2.14.0'
+
+  target 'ThrowTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ThrowUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
