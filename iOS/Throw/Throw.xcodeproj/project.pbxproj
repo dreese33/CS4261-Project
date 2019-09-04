@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		8B3FC905231C780B00CF924E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3FC903231C780B00CF924E /* LaunchScreen.storyboard */; };
 		8B3FC910231C780B00CF924E /* ThrowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3FC90F231C780B00CF924E /* ThrowTests.swift */; };
 		8B3FC91B231C780B00CF924E /* ThrowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3FC91A231C780B00CF924E /* ThrowUITests.swift */; };
+		8B5B7341231F71E80072DC2C /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B5B7340231F71E80072DC2C /* awsconfiguration.json */; };
+		8B8C91D8231F6FE0000F07AE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C91D7231F6FE0000F07AE /* API.swift */; };
 		8BDCDEB8231EBE410003714C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCDEB7231EBE410003714C /* Home.swift */; };
 		8BE1C64A231C86C7005441BB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1C649231C86C7005441BB /* Login.swift */; };
 		8BE1C64C231C86D2005441BB /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1C64B231C86D2005441BB /* Signup.swift */; };
@@ -61,6 +63,8 @@
 		8B3FC916231C780B00CF924E /* ThrowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThrowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3FC91A231C780B00CF924E /* ThrowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowUITests.swift; sourceTree = "<group>"; };
 		8B3FC91C231C780B00CF924E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B5B7340231F71E80072DC2C /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		8B8C91D7231F6FE0000F07AE /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8BDCDEB7231EBE410003714C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		8BE1C649231C86C7005441BB /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		8BE1C64B231C86D2005441BB /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
@@ -107,14 +111,14 @@
 				AADA1F615456914813AAB023 /* Pods-ThrowUITests.debug.xcconfig */,
 				766DCC9DF96397F4F225D199 /* Pods-ThrowUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		8B3FC8EB231C780A00CF924E = {
 			isa = PBXGroup;
 			children = (
-				8BDCDEB7231EBE410003714C /* Home.swift */,
+				8B5B7340231F71E80072DC2C /* awsconfiguration.json */,
+				8B8C91D7231F6FE0000F07AE /* API.swift */,
 				8B3FC8F6231C780A00CF924E /* Throw */,
 				8B3FC90E231C780B00CF924E /* ThrowTests */,
 				8B3FC919231C780B00CF924E /* ThrowUITests */,
@@ -137,6 +141,7 @@
 		8B3FC8F6231C780A00CF924E /* Throw */ = {
 			isa = PBXGroup;
 			children = (
+				8BDCDEB7231EBE410003714C /* Home.swift */,
 				8B3FC8F7231C780A00CF924E /* AppDelegate.swift */,
 				8B3FC8F9231C780A00CF924E /* ViewController.swift */,
 				8B3FC8FB231C780A00CF924E /* Main.storyboard */,
@@ -286,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5B7341231F71E80072DC2C /* awsconfiguration.json in Resources */,
 				8B3FC905231C780B00CF924E /* LaunchScreen.storyboard in Resources */,
 				8B3FC902231C780B00CF924E /* Assets.xcassets in Resources */,
 				8B3FC8FD231C780A00CF924E /* Main.storyboard in Resources */,
@@ -405,6 +411,7 @@
 				8B3FC8F8231C780A00CF924E /* AppDelegate.swift in Sources */,
 				8BDCDEB8231EBE410003714C /* Home.swift in Sources */,
 				8BE1C64A231C86C7005441BB /* Login.swift in Sources */,
+				8B8C91D8231F6FE0000F07AE /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

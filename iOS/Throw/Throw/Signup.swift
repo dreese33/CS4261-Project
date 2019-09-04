@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AWSAppSync
 
 class Signup: UIViewController {
     
@@ -24,14 +25,44 @@ class Signup: UIViewController {
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
     
+    var outletArray: Array<UITextField>?
+    var appSyncClient: AWSAppSyncClient?
+    
     @IBAction func signupAction(_ sender: UIButton) {
         //Send values to database here
+        if (!testFieldEmpty()) {
+            let newController = storyboard?.instantiateViewController(withIdentifier: "home")
+            self.present(newController!, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Signup Failed", message: "One or more fields were left blank", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        outletArray = [self.email, self.confirmEmail, self.username, self.streetAddress, self.address,
+                       self.country, self.password, self.confirmPassword, self.city, self.state,
+                       self.firstName, self.lastName]
         
-        let newController = storyboard?.instantiateViewController(withIdentifier: "home")
-        self.present(newController!, animated: true, completion: nil)
+        //App sync client initialization
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appSyncClient = appDelegate.appSyncClient
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+    }
+    
+    //Determines if there is an empty text field
+    func testFieldEmpty() -> Bool {
+        for component in self.outletArray! {
+            if (component.text == "") {
+                return true
+            }
+        }
+        
+        return false
     }
 }
