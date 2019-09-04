@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "throw",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "S3DeploymentBucket": "throw-throw-20190903194152-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/9073d6cf9b872c349c1448629792f5dfe53bb0ab"
+}
