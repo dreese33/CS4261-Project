@@ -1,0 +1,19 @@
+{
+    "throw": {
+        "awscloudformation": {
+            "AuthRoleName": "throw-throw-20190903194152-authRole",
+            "UnauthRoleArn": "arn:aws:iam::628350947791:role/throw-throw-20190903194152-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::628350947791:role/throw-throw-20190903194152-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "throw-throw-20190903194152-deployment",
+            "UnauthRoleName": "throw-throw-20190903194152-unauthRole",
+            "StackName": "throw-throw-20190903194152",
+            "StackId": "arn:aws:cloudformation:us-east-1:628350947791:stack/throw-throw-20190903194152/67e09280-cea4-11e9-a709-12f08cf73b28"
+        },
+        "categories": {
+            "auth": {
+                "throwa5a45a2a": {}
+            }
+        }
+    }
+}
